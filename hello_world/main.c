@@ -1,4 +1,3 @@
-# LED-Sense---Microchip-Try
 /**
  * @file main.c
  * @author lorang

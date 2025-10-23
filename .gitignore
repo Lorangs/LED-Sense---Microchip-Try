@@ -1,2 +1,5 @@
-// Ignore build output directory 
+# Ignore build output directory and other generated files on top level
 /out/
+/_build/
+/cmake/
+/.vscode/

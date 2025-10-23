@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project>                                  
+  <executable name="/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/busy_wait/out/busy_wait/default.elf">                 
+    <memory name="program">              
+      <units>bytes</units>                 
+      <length>131072</length>                 
+      <used>635</used>                     
+      <free>130437</free>                     
+    </memory>                              
+    <memory name="data">                 
+      <units>bytes</units>                 
+      <length>16384</length>                 
+      <used>41</used>                     
+      <free>16343</free>                     
+    </memory>                              
+  </executable>                            
+</project>                                 

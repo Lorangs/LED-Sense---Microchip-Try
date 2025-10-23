@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/hello_world/_build/hello_world/default",
+  "command": "/opt/microchip/xc8/v3.10/bin/xc8-cc -DDEBUG -DXPRJ_default=default -D__AVR128DB48__ -D__DEBUG=1 -c -mcpu=AVR128DB48 -gdwarf-2 -x c -mdfp=/home/lorang/.mchp_packs/Microchip/AVR-Dx_DFP/2.7.321/xc8 -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -funsigned-char -funsigned-bitfields -Wall -gdwarf-3 -mno-const-data-in-progmem -o CMakeFiles/hello_world_default_default_XC8_compile.dir/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/hello_world/main.c.o -c /home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/hello_world/main.c",
+  "file": "/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/hello_world/main.c",
+  "output": "/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/hello_world/_build/hello_world/default/CMakeFiles/hello_world_default_default_XC8_compile.dir/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/hello_world/main.c.o"
+}
+]

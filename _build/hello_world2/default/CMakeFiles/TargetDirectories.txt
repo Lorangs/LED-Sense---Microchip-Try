@@ -1,4 +1,0 @@
-C:/Users/loran/Documents/LedSense/_build/hello_world2/default/CMakeFiles/hello_world2_default_default_XC8_compile.dir
-C:/Users/loran/Documents/LedSense/_build/hello_world2/default/CMakeFiles/hello_world2_default_image_F2vSGkv7.dir
-C:/Users/loran/Documents/LedSense/_build/hello_world2/default/CMakeFiles/edit_cache.dir
-C:/Users/loran/Documents/LedSense/_build/hello_world2/default/CMakeFiles/rebuild_cache.dir
