@@ -3,3 +3,14 @@
 /_build/
 /cmake/
 /.vscode/
+
+hello_world/_build/
+hello_world/cmake/
+hello_world/.vscode/
+hello_world/out/
+
+busy_wait/_build/
+busy_wait/cmake/
+busy_wait/.vscode/
+busy_wait/out/
+

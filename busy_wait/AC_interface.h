@@ -10,11 +10,13 @@
 #define AC_INTERFACE_H
 
 #include <avr/io.h>
-#include <stdbool.h>
+
+//#include <inttypes.h>
 
 
 void AC_Init(void);
 void VREF_Init(void);
-bool AC_IsTriggered(void);
+int8_t AC_AboveThreshold(void);
+
 
 #endif // AC_INTERFACE_H
