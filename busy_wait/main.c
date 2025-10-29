@@ -5,29 +5,30 @@
  * @brief Busy wait example using USART3 and LED interface on AVR128DB48 microcontroller
  */
 
- #include "usart.h"
  #include "AC_interface.h"
  #include "led_interface.h"
  #include <util/delay.h>
 
+void disableUnusedPins(){
+
+
+    PORTB.PINCONFIG = PORT_ISC_INPUT_DISABLE_gc | PORT_PULLUPEN_bm;
+    PORTB.PINCTRLUPD = 0xFF; // Disable all pins on PORTB
+    
+    PORTC.PINCONFIG = PORT_ISC_INPUT_DISABLE_gc | PORT_PULLUPEN_bm;
+    PORTC.PINCTRLUPD = 0xFF;
+}
 
 int main(){
-    USART3_Init();
+    disableUnusedPins();
     LED_Init();
     AC_Init();
-
-    USART3_SendString("Hello, World!\r\n");
+    VREF_Init();
     while(1){
-        //LED_GetState() ? USART3_SendString("LED is ON\r\n") : USART3_SendString("LED is OFF\r\n");
-        int8_t ac_state = AC_AboveThreshold();
-        if (ac_state) {
-            USART3_SendString("AC is ON\r\n");
-            LED_On();
-        } else {
-            USART3_SendString("AC is OFF\r\n");
-            LED_Off();
-        }
-        _delay_ms(1000);
+        while(AC_AboveThreshold()){}
+        LED_On();
+        while(!AC_AboveThreshold()){}
+        LED_Off();
     }
     return 0;
 }

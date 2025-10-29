@@ -1,0 +1,49 @@
+{
+    "version": "1.7",
+    "configurations": [
+        {
+            "name": "default",
+            "id": "conf1",
+            "device": "AVR128DB48",
+            "imagePath": "./out/polling/default.elf",
+            "toolProperties": "default-tool-base",
+            "packs": [
+                {
+                    "name": "AVR-Dx_DFP",
+                    "vendor": "Microchip",
+                    "version": "2.7.321"
+                }
+            ],
+            "fileSet": "default",
+            "toolchain": "default-XC8",
+            "preBuildSteps": [],
+            "postBuildSteps": [
+                "avr-objcopy -O ihex %{TargetPath} %{TargetDirRelative}/%{TargetName}.hex"
+            ]
+        }
+    ],
+    "propertyGroups": [
+        {
+            "name": "default-XC8",
+            "type": "toolchain",
+            "provider": "microchip.toolchains:xc8@3.10",
+            "properties": {}
+        },
+        {
+            "name": "default-tool-base",
+            "type": "tool",
+            "properties": {}
+        }
+    ],
+    "fileSets": [
+        {
+            "name": "default",
+            "files": [
+                {
+                    "include": "**/*",
+                    "exclude": "**/(_build|out|cmake|.vscode)/**/*"
+                }
+            ]
+        }
+    ]
+}

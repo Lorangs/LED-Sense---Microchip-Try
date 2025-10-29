@@ -3,9 +3,11 @@
     "configurations": [
         {
             "name": "default",
-            "id": "conf1",
+            "id": "",
             "device": "AVR128DB48",
+            "imageType": "application",
             "imagePath": "./out/busy_wait/default.elf",
+            "toolProperties": "default-tool-base",
             "packs": [
                 {
                     "name": "AVR-Dx_DFP",
@@ -15,7 +17,8 @@
             ],
             "fileSet": "default",
             "toolchain": "default-XC8",
-            "postBuildSteps": [ 
+            "preBuildSteps": [],
+            "postBuildSteps": [
                 "avr-objcopy -O ihex %{TargetPath} %{TargetDirRelative}/%{TargetName}.hex"
             ]
         }
@@ -25,6 +28,11 @@
             "name": "default-XC8",
             "type": "toolchain",
             "provider": "microchip.toolchains:xc8@3.10",
+            "properties": {}
+        },
+        {
+            "name": "default-tool-base",
+            "type": "tool",
             "properties": {}
         }
     ],
