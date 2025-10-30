@@ -4,6 +4,8 @@
 /cmake/
 /.vscode/
 
+
+# Ignore build output directory and other generated files in subdirectories
 hello_world/_build/*
 hello_world/cmake/*
 hello_world/.vscode/*
@@ -17,7 +19,12 @@ busy_wait/out/*
 polling/_build/*
 polling/cmake/*
 polling/.vscode/*
-polling/out/*
+polling/out/
+
+interrupt/_build/*
+interrupt/cmake/*
+interrupt/.vscode/*
+interrupt/out/*
 
 
 
