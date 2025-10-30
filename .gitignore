@@ -14,3 +14,10 @@ busy_wait/cmake/*
 busy_wait/.vscode/*
 busy_wait/out/*
 
+polling/_build/*
+polling/cmake/*
+polling/.vscode/*
+polling/out/*
+
+
+

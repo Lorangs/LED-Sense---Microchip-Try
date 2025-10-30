@@ -1,5 +1,0 @@
-# ninja log v7
-1	404	1761216951384138380	CMakeFiles/hello_world_default_default_XC8_compile.dir/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/hello_world/main.c.o	8449a5fb2da783c1
-405	437	1761216951788844852	/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/hello_world/out/hello_world/default.elf	6553b0e9d60bd461
-2	297	1761217116827748016	CMakeFiles/hello_world_default_default_XC8_compile.dir/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/hello_world/main.c.o	8449a5fb2da783c1
-297	325	1761217117122750955	/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/hello_world/out/hello_world/default.elf	ab60bebc3346202f

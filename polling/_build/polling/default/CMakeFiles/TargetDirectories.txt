@@ -1,4 +1,0 @@
-/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/polling/_build/polling/default/CMakeFiles/polling_default_default_XC8_compile.dir
-/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/polling/_build/polling/default/CMakeFiles/polling_default_image_wyxwaFL6.dir
-/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/polling/_build/polling/default/CMakeFiles/edit_cache.dir
-/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/polling/_build/polling/default/CMakeFiles/rebuild_cache.dir

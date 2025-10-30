@@ -25,6 +25,13 @@ void USART3_SendString(char *str)
     }
 }
 
+void USART3_SendInt(uint32_t num)
+{
+    char buffer[32];
+    snprintf(buffer, sizeof(buffer), "%lu", num);
+    USART3_SendString(buffer);
+}
+
 bool USART3_IsTxReady(void)
 {
     return (bool)(USART3.STATUS & USART_DREIF_bm);

@@ -1,5 +1,5 @@
 #include "AC_interface.h"
-#include <avr/io.h>
+
 
 /**
 * Initialize the Analog Comparator  for Ambient Light Sensor
@@ -20,8 +20,8 @@ void AC_Init(void)
     // According to equation from section 32.3.2.2 in datasheet
     // V_DACREF = (DACREF / 256) * V_REF
     // Given a desired V_DACREF of 0.1V and V_REF of 1.024V:
-    // DACREF = (V_DACREF / V_REF) * 256 = (0.1 / 1.024) * 256 ≈ 0d26 = 0x20
-    AC0.DACREF      = 0x1a; 
+    // DACREF = (V_DACREF / V_REF) * 256 = (0.1 / 1.024) * 256 ≈ 0d25 = 0x19
+    AC0.DACREF      = 0x19; 
 
     AC0.CTRLA       = AC_ENABLE_bm          |//|   // Enable AC0
                       AC_INTMODE_NORMAL_POSEDGE_gc;

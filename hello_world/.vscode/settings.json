@@ -1,6 +1,0 @@
-{
-    "mplab.clangd.arguments": [
-        "--compile-commands-dir=${workspaceFolder}/_build/hello_world/default"
-    ],
-    "mplab.clangd.path": "/opt/microchip/xc8/v3.10/bin/xc8-clangd"
-}

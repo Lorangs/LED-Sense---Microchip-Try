@@ -7,16 +7,21 @@
 
  #include "AC_interface.h"
  #include "led_interface.h"
+#include <avr/io.h>
  #include <util/delay.h>
 
 void disableUnusedPins(){
-
+    PORTA.PINCONFIG = PORT_ISC_INPUT_DISABLE_gc | PORT_PULLUPEN_bm;
+    PORTA.PINCTRLUPD = 0xFF; // Disable all pins on
 
     PORTB.PINCONFIG = PORT_ISC_INPUT_DISABLE_gc | PORT_PULLUPEN_bm;
     PORTB.PINCTRLUPD = 0xFF; // Disable all pins on PORTB
     
     PORTC.PINCONFIG = PORT_ISC_INPUT_DISABLE_gc | PORT_PULLUPEN_bm;
     PORTC.PINCTRLUPD = 0xFF;
+
+    PORTD.PINCONFIG = PORT_ISC_INPUT_DISABLE_gc | PORT_PULLUPEN_bm;
+    PORTD.PINCTRLUPD = 0xFF;
 }
 
 int main(){
@@ -24,6 +29,8 @@ int main(){
     LED_Init();
     AC_Init();
     VREF_Init();
+
+    
     while(1){
         while(AC_AboveThreshold()){}
         LED_On();

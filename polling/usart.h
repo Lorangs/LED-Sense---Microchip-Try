@@ -8,10 +8,12 @@
 #include <string.h>
 #include <stdint.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 void USART3_Init(void);
 void USART3_SendChar(char c);
 void USART3_SendString(char *str);
+void USART3_SendInt(uint32_t num);
 bool USART3_IsTxReady(void);
 bool USART3_IsRxReady(void);
 uint8_t USART3_Read();

@@ -1,4 +1,0 @@
-/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/hello_world/_build/hello_world/default/CMakeFiles/hello_world_default_default_XC8_compile.dir
-/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/hello_world/_build/hello_world/default/CMakeFiles/hello_world_default_image_tpYWJIsZ.dir
-/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/hello_world/_build/hello_world/default/CMakeFiles/edit_cache.dir
-/home/lorang/Documents/7_semester/TDT4258_Maskinnaer_Programmering/lab/lab_4/hello_world/_build/hello_world/default/CMakeFiles/rebuild_cache.dir
