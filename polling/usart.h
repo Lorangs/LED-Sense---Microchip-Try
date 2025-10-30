@@ -5,10 +5,11 @@
 #define USART3_BAUD_RATE(BAUD_RATE) ((float)(F_CPU * 64 / (16 *(float)BAUD_RATE)) + 0.5)
 
 #include <avr/io.h>
-#include <string.h>
 #include <stdint.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <string.h>
+
 
 void USART3_Init(void);
 void USART3_SendChar(char c);

@@ -13,7 +13,7 @@
 void LED_Init(void)
 {
     PORTA.DIRSET = PIN2_bm; // Set PA2 as output
-    PORTA.OUTCLR = PIN2_bm; // Turn off LED initially
+    PORTA.OUTSET = PIN2_bm; // Turn off LED initially
 }
 
 /**
@@ -45,5 +45,5 @@ void LED_Toggle(void)
 */
 bool LED_GetState(void)
 {
-    return (PORTA.OUT & PIN2_bm) ? true : false; // Return 1 if LED is on, 0 if off
+    return (PORTA.OUT & PIN2_bm) ? false : true; // Return 1 if LED is on, 0 if off (active low)
 }

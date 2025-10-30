@@ -21,7 +21,7 @@ void USART3_SendString(char *str)
     {
     for(size_t i = 0; i < strlen(str); i++)
     {
-    USART3_SendChar(str[i]);
+        USART3_SendChar(str[i]);
     }
 }
 

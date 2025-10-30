@@ -25,7 +25,7 @@ void AC_Init(void)
 
     AC0.CTRLA       = AC_ENABLE_bm                  |   // Enable AC0
                       AC_INTMODE_NORMAL_POSEDGE_gc  |   // Interrupt on positive edge
-                      AC_POWER_PROFILE2_gc          |   // Set power profile to Profile 2 (lowest power consumption)
+                      AC_POWER_PROFILE0_gc          |   // Set power profile to Profile 2 (lowest power consumption)
                       AC_RUNSTDBY_bm;                   // Run in standby mode
 }   
 
