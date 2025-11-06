@@ -43,7 +43,6 @@ void disableInputs()
     PORTD.PINCTRLUPD = 0xFF;
 }
 
-
 int main(){
     disableInputs();
     LED_Init();

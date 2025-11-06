@@ -26,5 +26,9 @@ interrupt/cmake/*
 interrupt/.vscode/*
 interrupt/out/*
 
+core_independent/_build/*
+core_independent/cmake/*
+core_independent/.vscode/*
+core_independent/out/*
 
 
